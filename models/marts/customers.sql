@@ -1,4 +1,4 @@
-with
+with.  
 
 customers as (
 
