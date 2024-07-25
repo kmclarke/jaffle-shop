@@ -24,6 +24,9 @@ clean-targets:
 vars:
   "dbt_date:time_zone": "America/Los_Angeles"
 
+on-run-start: "select 'we are starting the run!'"
+on-run-end: "select 'we have finished the run!'"
+
 seeds:
   jaffle_shop:
     +schema: raw

@@ -1,3 +1,7 @@
+{{ config(
+    pre_hook="select current_timestamp();"
+) }}
+
 with  
 
 customers as (
