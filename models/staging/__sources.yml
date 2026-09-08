@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: ecom
+    database: dbt_fundamentals_kc
     schema: raw
     description: E-commerce data for the Jaffle Shop
     freshness:
