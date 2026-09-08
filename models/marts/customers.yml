@@ -1,5 +1,7 @@
 models:
   - name: customers
+    semantic_model:
+      enabled: true
     description: Customer overview data mart, offering key details for each unique customer. One row per customer.
     data_tests:
       - dbt_utils.expression_is_true:
@@ -22,8 +24,6 @@ models:
         description: The timestamp when a customer placed their first order.
       - name: last_ordered_at
         description: The timestamp of a customer's most recent order.
-        dimension:
-          type: time
       - name: lifetime_spend_pretax
         description: The sum of all the pre-tax subtotals of every order a customer has placed.
       - name: lifetime_tax_paid
