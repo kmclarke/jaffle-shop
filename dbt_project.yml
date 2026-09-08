@@ -30,6 +30,7 @@ seeds:
 
 models:
   jaffle_shop:
+    +database: kclarke_analytics
     marts:
       +materialized: table
       +schema: marts
